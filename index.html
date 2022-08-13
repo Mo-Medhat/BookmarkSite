@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" href="imgs/icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="mt-5">
+        <h2 class="text-muted mb-1 pb-5 border-bottom border-dark">Bookmarks</h2>
+        <div class="text-center special-style pb-4 rounded-2">
+            <h3 class="mt-2 pt-2 mb-4 text-center fw-bold">Bookmark your favorite sites</h3>
+            <div class="box-inps w-75 m-auto">
+            <label class="fw-bold mb-2" for="bookName">Website Name</label>
+            <input type="text" id="nameBar" class="input-group p-2 mb-3" placeholder="Website Name">
+            <label class="fw-bold mb-2" for="bookUrl">Website URL</label>
+            <input type="text" id="urlBar" class="input-group p-2 mb-3" placeholder="Website URL">
+            <button onclick="addWebsite()" id="main-btn" class="btn btn-success px-3 py-2">Submit</button>
+            <input onchange="searching(this.value)" type="text" id="searchBar" class="input-group p-2 mt-3" placeholder="Search By Website Name">
+        </div>
+        </div>
+        <table class="table special-style-links mt-5">
+            <tbody id="contentArea">
+           
+
+
+
+            </tbody>    
+        </table>
+    </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
